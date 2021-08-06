@@ -1,0 +1,771 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .9);
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+input {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clear {
+    content: "";
+    clear: both;
+}
+
+.navbar {
+    height: 64px;
+    margin-bottom: 0 !important;
+}
+
+.navbar .logo {
+    float: left;
+    width: 20%;
+}
+
+.navbar .logo img {
+    width: 130px;
+    margin-left: 100px;
+}
+
+.navbar .navbar-menu {
+    float: left;
+    width: 60%;
+}
+
+.navbar .navbar-btn {
+    float: left;
+    margin-top: 24px!important;
+    width: 20%;
+}
+
+ul.menu {
+    display: inline-block;
+    margin: 23px 225px;
+}
+
+ul.menu a {
+    color: rgb(26, 23, 23);
+}
+
+li.them:before {
+    content: '';
+    background: black;
+    border: 5px solid white;
+    border-top: 8px solid black;
+    position: relative;
+    top: 11px;
+    left: 5px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul.navbar-box {
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    background: #fff;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+}
+
+ul.navbar-box li {
+    display: block;
+    margin: 10px;
+    border-top: 1px dashed #000;
+    line-height: 2rem;
+    padding-top: 9px;
+}
+
+.btn {
+    display: inline!important;
+    outline: none!important;
+    border: none;
+    padding: 8px 19px;
+    border-radius: 20px;
+    background: #4949ea;
+    color: #ffffff;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide-content {
+    position: absolute;
+    color: #ffffff;
+    width: 450px;
+    padding: 35px;
+    border-radius: 10px;
+    background: #00000036;
+    left: 80px;
+    top: 39px;
+}
+
+.slide-content p {
+    line-height: 1.15rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.slide-content h2 {
+    font-size: 35px;
+}
+
+.slide-img {
+    height: 80vh;
+    background: url(../images/slide1.jpg) center center / cover;
+}
+
+#mySlider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.singleSlide {
+    background-size: cover;
+    height: 300px;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    top: 0px;
+}
+
+#sliderNav {
+    position: relative;
+    top: -210px;
+}
+
+#sliderNav:hover {
+    cursor: pointer;
+}
+
+#sliderPrev {
+    position: relative;
+    float: left;
+    left: 50px;
+}
+
+#sliderNext {
+    position: relative;
+    float: right;
+    right: 50px;
+}
+
+#sliderNext img,
+#sliderPrev img {
+    width: 32px;
+}
+
+@-webkit-keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+
+.slideInRight {
+    left: -100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+.slideInLeft {
+    left: 100%;
+    -webkit-animation: slideIn 1s forwards;
+    animation: slideIn 1s forwards;
+}
+
+@-webkit-keyframes slideOutLeft {
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes slideOutLeft {
+    100% {
+        left: -100%;
+    }
+}
+
+.slideOutLeft {
+    -webkit-animation: slideOutLeft 1s forwards;
+    animation: slideOutLeft 1s forwards;
+}
+
+@-webkit-keyframes slideOutRight {
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes slideOutRight {
+    100% {
+        left: 100%;
+    }
+}
+
+.slideOutRight {
+    -webkit-animation: slideOutRight 1s forwards;
+    animation: slideOutRight 1s forwards;
+}
+
+.container {
+    width: 1120px;
+    margin: 50px auto;
+    overflow-x: hidden;
+}
+
+.title h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #12225d;
+}
+
+.title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.introduce {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.introduce .content h4 {
+    font-size: 17px;
+    color: #197e9c;
+}
+
+.introduce .content p {
+    font-size: 12px;
+}
+
+.box {
+    display: inline-block;
+    width: 22%;
+    margin: 15px;
+    padding-bottom: 15px;
+    margin-right: 1.3%;
+    margin-left: 1.4%;
+    text-align: center;
+    color: #0b1731;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+    border-radius: 5px;
+}
+
+.box-slide {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+    text-align: center;
+    color: #0b1731;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+    border-radius: 5px;
+}
+
+.mySlider {
+    transition: all 800ms ease 0s;
+}
+
+.sliderNav {
+    position: relative;
+    top: -208px;
+    width: 1120px;
+}
+
+.sliderNav img {
+    width: 40px;
+}
+
+.prevslide {
+    position: absolute;
+}
+
+.nextslide {
+    position: absolute;
+    right: 0;
+}
+
+.view-all {
+    float: right;
+    font-size: 13px;
+    margin: 0 18px 10px 0;
+}
+
+.box .img,
+.box-slide .img {
+    background: url(../images/kiana.jpg) center center / cover;
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+.feedback {
+    width: 1349px;
+    margin-left: -110px;
+    background: url(../images/durandal.jpg) center center / cover;
+    height: 90vh;
+    position: relative;
+    margin-top: 100px;
+}
+
+.feedback-content {
+    width: 500px;
+    background: #00000094;
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    position: absolute;
+    right: 180px;
+    top: 100px;
+}
+
+.feedback-content h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.feedback-content p {
+    padding: 0 35px;
+    font-size: 12px;
+}
+
+.feedback-content h3 {
+    font-size: 14px;
+}
+
+.box-three {
+    display: inline-block;
+    text-align: center;
+    width: 31%;
+    margin: 0 1% 0 1%;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+    border-radius: 5px;
+}
+
+.box-three.circle .img {
+    height: 220px;
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: url(../images/rita.jpg) center center / cover;
+}
+
+.box-three .text h3 {
+    color: #151588;
+}
+
+.box-three .text h4 {
+    color: red;
+    margin-top: -11px;
+}
+
+.box-three .text p {
+    padding: 0 20px;
+    font-size: 13px;
+}
+
+.box-three.normal {
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+    border-radius: 5px;
+}
+
+.box-three.normal .img {
+    width: 98%;
+    height: 200px;
+    margin: 5px auto;
+    background: url(../images/rita.jpg) center center / cover;
+    border-radius: 8px;
+}
+
+.advise {
+    width: 600px;
+    margin: 100px auto;
+    padding: 50px;
+    text-align: center;
+    background: #f547efcf;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.advise h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.advise-input {
+    border: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.footer {
+    text-align: center;
+    background: #0f2258;
+    height: 50px;
+    color: #fff;
+}
+
+.footer p {
+    padding-top: 17px;
+}
+
+.img-title {
+    background: url(../images/seele.png) center top / cover;
+    height: 300px;
+}
+
+.tag {
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.22);
+}
+
+.tag .content {
+    margin-top: 50px;
+}
+
+.tag .content img {
+    width: 100% !important;
+    margin: 20px 0;
+}
+
+.tag .content p {
+    width: 100% !important;
+}
+
+.tag .title {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.tag .title h2 {
+    color: #121248;
+    font-size: 30px;
+}
+
+.box-three .text p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.list-category {
+    background: #d8d8d8c4;
+    margin-top: -14px;
+    height: 75px;
+}
+
+.list-category li {
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.list-category li a {
+    color: #000;
+}
+
+.pagination {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pagination .pgn-btn {
+    background: #ffffff;
+    color: rgb(46, 46, 46);
+    padding: 10px 15px;
+    margin: 0 -2px;
+}
+
+.pagination .pgn-btn.action {
+    background: rgb(241, 53, 53);
+    color: #ffffff;
+}
+
+.display {
+    display: none !important;
+}
+
+.form-group {
+    position: relative;
+}
+
+.hihi {
+    background: #5611a2;
+    color: #ffffff !important;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+a.hihi {
+    margin: 25px;
+}
+
+.empty {
+    position: absolute;
+    top: 32px;
+    right: 3px;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: center;
+    color: red;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: #f9fa00;
+}
+
+.content a {
+    color: rgb(29, 27, 27);
+}
+
+.box-pre-img {
+    width: 150px;
+}
+
+.form-control.chosse {
+    width: 100px;
+    text-align: center;
+}
+
+div#box {
+    z-index: 10;
+    height: 80vh;
+    margin-top: 50px;
+    padding: 50px;
+    background: #fafafa;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+div#box .text {
+    width: 84%;
+    margin: 0 auto;
+}
+
+#cancel {
+    font-size: 30px;
+    font-weight: 900;
+    color: #000000;
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.id_service {
+    display: inline-table;
+    width: 120px;
+    text-align: center;
+    box-shadow: 0 0 2rem 0 rgb(46 46 79 / 32%);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.id_service .text {
+    width: 100px;
+    margin: 0 auto;
+    display: table;
+    overflow: hidden;
+}
+
+.id_service .text h4 {
+    font-size: 11px;
+}
+
+.id_service .img {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px 5px 0 0;
+}
+
+.delete {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 900;
+    color: #ffffff;
+    background: #1212128f;
+    right: -8px;
+    top: -8px;
+    border: 1px solid #ffffff;
+    padding: 2px 5px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.box-success {
+    width: 500px;
+    margin: auto;
+    margin-top: 146px;
+    text-align: center;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 2rem 0 rgb(136 152 170 / 22%);
+}
+
+.sucess-text p {
+    margin: 10px;
+    color: #7e7e7e;
+}
+
+div#success {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #000000e3;
+}
+
+.success-img img {
+    width: 120px;
+}
+
+.box-service {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000000ad;
+    top: 0;
+    z-index: 2;
+}
+
+.service-table {
+    width: max-content;
+}
+
+th,
+td {
+    border: 1px solid #cbcbcb;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle!important;
+    text-align: center!important;
+}
+
+th {
+    border-bottom-width: 2px;
+}
+
+td {
+    border-top: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td.td-service {
+    overflow-x: scroll;
+    display: inline-block;
+    width: 250px;
+}
+
+td.td-service .id_service {
+    margin-right: 10px;
+}
+
+.btn.btn-info {
+    border-radius: 5px;
+    background: #169ec5;
+}
+
+.btn.btn-danger {
+    border-radius: 5px;
+    background: #ec3737;
+}
+
+div#wait {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background: #000000e3;
+}
+
+div#wait .loading {
+    width: 300px;
+    height: 100px;
+    border: solid 1px #ffffff;
+    position: relative;
+    margin: 200px auto;
+}
+
+div#wait .loading h3 {
+    position: absolute;
+    top: 0px;
+    left: 125px;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+div#wait .border {
+    border: 1px solid white;
+    height: 12px;
+    position: absolute;
+    top: 50px;
+    width: 102px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div#load {
+    width: 100px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+}
